@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Tech Fest 2026</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f8;
+            color: #222;
+        }
+
+        header {
+            text-align: center;
+            background-color: #131358;
+            color: rgb(255, 255, 255);
+            padding-bottom: 20px;
+        }
+
+        header img {
+            width: 100%;
+            max-height: 280px;
+            object-fit: cover;
+        }
+
+        section {
+            width: 85%;
+            margin: 25px auto;
+            background: rgb(235, 229, 229);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #3e3ea0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #0f0f0f;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #cc0f0f;
+            color: white;
+        }
+
+        input, select, textarea {
+            width: 95%;
+            padding: 8px;
+            margin: 6px 0 15px;
+        }
+
+        button {
+            background-color: #e10a0a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        iframe {
+            width: 100%;
+            height: 250px;
+            border: 1px solid #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="event-banner.jpg" alt="College Tech Fest Banner">
+    <h1>College Tech Fest 2026</h1>
+    <p>Innovation, Technology and Creativity</p>
+</header>
+
+<section>
+    <h2>About the Event</h2>
+    <p>
+        College Tech Fest is an annual event where students participate
+        in technical competitions, workshops and cultural activities.
+    </p>
+
+    <p>
+        Visit our
+        <a href="https://www.example.com" target="_blank">
+            official event website
+        </a>
+        for more information.
+    </p>
+</section>
+
+<section>
+    <h2>Event Schedule</h2>
+
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Event</th>
+            <th>Venue</th>
+        </tr>
+        <tr>
+            <td>09:00 AM</td>
+            <td>Inauguration</td>
+            <td>Auditorium</td>
+        </tr>
+        <tr>
+            <td>10:00 AM</td>
+            <td>Web Development Workshop</td>
+            <td>Computer Lab</td>
+        </tr>
+        <tr>
+            <td>12:00 PM</td>
+            <td>Quiz Competition</td>
+            <td>Seminar Hall</td>
+        </tr>
+        <tr>
+            <td>02:00 PM</td>
+            <td>Coding Contest</td>
+            <td>Computer Lab</td>
+        </tr>
+        <tr>
+            <td>04:00 PM</td>
+            <td>Prize Distribution</td>
+            <td>Auditorium</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Event Location</h2>
+
+    <iframe
+        src="https://www.google.com/maps"
+        title="College Event Location">
+    </iframe>
+</section>
+
+<section>
+    <h2>Registration Form</h2>
+
+    <form action="/register" method="post">
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br>
+
+        <label for="course">Course:</label><br>
+        <select id="course" name="course">
+            <option>BCA</option>
+            <option>B.Tech</option>
+            <option>MCA</option>
+            <option>M.Tech</option>
+        </select><br>
+
+        <label for="event">Select Event:</label><br>
+        <select id="event" name="event">
+            <option>Web Development Workshop</option>
+            <option>Quiz Competition</option>
+            <option>Coding Contest</option>
+        </select><br>
+
+        <label for="message">Additional Comments:</label><br>
+        <textarea id="message" name="message" rows="4"></textarea><br>
+
+        <button type="submit">Register Now</button>
+
+    </form>
+</section>
+
+</body>
+</html>

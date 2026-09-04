@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #c91a1a;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: orange;
+    padding: 15px;
+}
+
+nav a {
+    color: rgb(243, 243, 243);
+    text-decoration: none;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.home {
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.home h2 {
+    font-size: 35px;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: rgb(255, 128, 1);
+    color: rgb(240, 231, 231);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+#menu {
+    padding: 40px 20px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.food {
+    background-color: white;
+    width: 200px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px gray;
+}
+
+.food h3 {
+    color: orange;
+}
+
+.food b {
+    font-size: 20px;
+}
+
+#contact {
+    background-color: white;
+    padding: 40px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+img{
+    height: 200px;
+    width: 200px;
+    
+}
+.as{
+    margin: 5px;
+}
+
