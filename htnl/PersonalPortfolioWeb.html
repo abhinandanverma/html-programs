@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinandan Verma | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #172b4d;
+            background: #f4f8ff;
+            line-height: 1.6;
+        }
+
+        /* Navigation bar */
+        header {
+            background: #14263e;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        header h2 span {
+            color: #3995ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        nav a:hover {
+            color: #3995ff;
+        }
+
+        /* Hero section */
+        .hero {
+            padding: 70px 10%;
+            background: linear-gradient(120deg, #e3efff, #ffffff);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            line-height: 1.2;
+            margin: 10px 0;
+        }
+
+        .hero h1 span {
+            color: #0878f9;
+        }
+
+        .hero p {
+            margin: 12px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0878f9;
+            color: white;
+            padding: 10px 22px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 12px;
+        }
+
+        .btn:hover {
+            background: #075dc2;
+        }
+
+        .profile {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background: #c5e0ff;
+            border: 7px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 75px;
+            flex-shrink: 0;
+        }
+
+        /* Common sections */
+        section {
+            padding: 35px 10%;
+        }
+
+        .section-title {
+            color: #0878f9;
+            margin-bottom: 12px;
+        }
+
+        .white {
+            background: white;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 35px;
+        }
+
+        .skill {
+            display: inline-block;
+            background: #e1edff;
+            color: #075dc2;
+            padding: 7px 18px;
+            border-radius: 25px;
+            margin: 5px 4px 5px 0;
+        }
+
+        .project {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #dce5f0;
+        }
+
+        /* Contact form */
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 6px 0;
+            border: 1px solid #d3dce8;
+            border-radius: 6px;
+            font: inherit;
+        }
+
+        .contact-form button {
+            background: #0878f9;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #14263e;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        /* Mobile responsive design */
+        @media (max-width: 650px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding: 40px 7%;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .profile {
+                width: 160px;
+                height: 160px;
+                font-size: 55px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 28px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h2>Abhinandan <span>Verma</span></h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home section -->
+    <div class="hero" id="home">
+        <div>
+            <p>Hello, I'm</p>
+            <h1>Abhinandan <span>Verma</span></h1>
+            <h3>BCA Student | Web Developer Learner</h3>
+
+            <p>
+                I am learning web development and building
+                projects to improve my coding skills.
+            </p>
+
+            <a class="btn" href="#contact">Contact Me</a>
+        </div>
+
+        <!-- Emoji placeholder; replace with your own photo if desired -->
+        <div class="profile" aria-label="Profile photo placeholder">
+            👨🏻‍💻
+        </div>
+    </div>
+
+    <!-- About and Skills -->
+    <section class="white grid">
+        <div id="about">
+            <h2 class="section-title">About Me</h2>
+            <p>
+                Hi! I am a BCA student interested in web development.
+                My goal is to become a Full Stack Web Developer
+                and work on real-world projects.
+            </p>
+        </div>
+
+        <div id="skills">
+            <h2 class="section-title">My Skills</h2>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Python</span>
+            <span class="skill">C++</span>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="grid" id="education">
+        <div>
+            <h2 class="section-title">My Education</h2>
+            <h3>Bachelor of Computer Applications</h3>
+            <p>BCA Student</p>
+            <p>Learning programming and web development.</p>
+        </div>
+
+        <div>
+            <h2 class="section-title">My Goals</h2>
+            <p>Improve my coding skills.</p>
+            <p>Build useful projects.</p>
+            <p>Become a Full Stack Developer.</p>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="white" id="projects">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="grid">
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>A personal website built with HTML and CSS.</p>
+            </div>
+
+            <div class="project">
+                <h3>Student Registration Form</h3>
+                <p>A form to practice HTML input fields.</p>
+            </div>
+
+            <div class="project">
+                <h3>Student Marks Table</h3>
+                <p>A simple table displaying student marks.</p>
+            </div>
+
+            <div class="project">
+                <h3>Python Programs</h3>
+                <p>Beginner programs to practice Python logic.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="grid">
+            <div>
+                <p>Email: your-email@example.com</p>
+                <p>Location: India</p>
+                <p>Interested in web development opportunities.</p>
+            </div>
+
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Demo form only. Connect a backend to send messages.');">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Abhinandan Verma | Built with HTML & CSS</p>
+    </footer>
+
+</body>
+</html>
