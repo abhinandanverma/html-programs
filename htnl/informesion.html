@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Example</title>
+    
+    <style>
+        body {
+            text-align: center;
+            background-color: #f0f0f0;
+            font-family: Arial;
+        }
+        
+        .box {
+            background: white;
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 2px solid blue;
+            border-radius: 10px;
+        }
+        
+        button {
+            background: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+        }
+        
+        button:hover {
+            background: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2 id="heading">Hello World</h2>
+        <p id="demo">Click button to change text</p>
+        
+        <button onclick="changeText()">Change Text</button>
+        <button onclick="showAlert()">Show Alert</button>
+        <button onclick="changeColor()">Change Color</button>
+    </div>
+    
+    <!-- JAVASCRIPT -->
+    <script>
+        // Function 1
+        function changeText() {
+            document.getElementById("heading").innerHTML = "Welcome to AKTU";
+            document.getElementById("demo").innerHTML = "Text Changed!";
+        }
+        
+        // Function 2
+        function showAlert() {
+            alert("Hello Student! Best of Luck for Exam 😊");
+        }
+        
+        // Function 3
+        function changeColor() {
+            document.body.style.backgroundColor = "lightgreen";
+        }
+    </script>
+</body>
+</html>

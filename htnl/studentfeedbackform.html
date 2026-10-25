@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Browser tab ka title -->
+    <title>Student Feedback Form</title>
+</head>
+
+<body>
+
+    <!-- Page ki heading -->
+    <h1>Student Feedback Form</h1>
+
+    <!-- Feedback form start -->
+    <form>
+
+        <!-- Student ka naam -->
+        <label>Student Name:</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <br><br>
+
+        <!-- Email address -->
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <br><br>
+
+        <!-- Feedback rating -->
+        <label>How was your experience?</label>
+
+        <br>
+
+        <input type="radio" name="rating" value="Excellent">
+        Excellent
+
+        <input type="radio" name="rating" value="Good">
+        Good
+
+        <input type="radio" name="rating" value="Poor">
+        Poor
+
+        <br><br>
+
+        <!-- Student ka message likhne ke liye -->
+        <label>Your Feedback:</label>
+
+        <br>
+
+        <textarea rows="5" cols="30"
+        placeholder="Write your feedback here"></textarea>
+
+        <br><br>
+
+        <!-- Feedback submit karne ka button -->
+        <input type="submit" value="Submit Feedback">
+
+        <!-- Form clear karne ka button -->
+        <input type="reset" value="Clear">
+
+    </form>
+
+</body>
+</html>

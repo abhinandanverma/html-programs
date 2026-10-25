@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial;
+        }
+        
+        .form-box {
+            background-color: white;
+            width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            border: 1px solid gray;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px gray; /* halka shadow */
+        }
+        
+        h2 {
+            text-align: center;
+            color: green;
+        }
+        
+        input, select {
+            width: 95%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+        }
+        
+        .btn {
+            background-color: green;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-box">
+        <h2>Student Registration</h2>
+        
+        <form>
+            Name: <input type="text" placeholder="Enter Name">
+            
+            Email: <input type="email" placeholder="Enter Email">
+            
+            Password: <input type="password">
+            
+            Gender: 
+            <input type="radio" name="g"> Male
+            <input type="radio" name="g"> Female
+            
+            Course: 
+            <select>
+                <option>BCA</option>
+                <option>BBA</option>
+                <option>B.Tech</option>
+            </select>
+            
+            <button class="btn" type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

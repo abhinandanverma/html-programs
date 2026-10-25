@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Browser tab ka title -->
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+    <!-- Form ki heading -->
+    <h1>Student Registration Form</h1>
+
+    <!-- Form start -->
+    <form>
+
+        <!-- Student ka naam -->
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <br><br>
+
+        <!-- Student ki email -->
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <br><br>
+
+        <!-- Student ka password -->
+        <label>Password:</label>
+        <input type="password" placeholder="Enter password" required>
+
+        <br><br>
+
+        <!-- Gender select karne ke liye -->
+        <label>Gender:</label>
+
+        <input type="radio" name="gender" value="male">
+        Male
+
+        <input type="radio" name="gender" value="female">
+        Female
+
+        <br><br>
+
+        <!-- Course select karne ke liye -->
+        <label>Select Course:</label>
+
+        <select name="course">
+            <option>BCA</option>
+            <option>BBA</option>
+            <option>MCA</option>
+            <option>B.Tech</option>
+        </select>
+
+        <br><br>
+
+        <!-- Skills select karne ke liye -->
+        <label>Skills:</label>
+
+        <input type="checkbox" name="skills" value="html">
+        HTML
+
+        <input type="checkbox" name="skills" value="css">
+        CSS
+
+        <input type="checkbox" name="skills" value="python">
+        Python
+
+        <br><br>
+
+        <!-- Form submit karne ka button -->
+        <input type="submit" value="Register">
+
+        <!-- Form reset karne ka button -->
+        <input type="reset" value="Clear">
+
+    </form>
+
+</body>
+</html>
+
