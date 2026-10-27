@@ -1,0 +1,126 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Table</title>
+
+    <style>
+        /* Puri website ki styling */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #dbeafe, #ede9fe);
+            margin: 0;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        /* Main heading */
+        h1 {
+            color: #1e3a8a;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        /* Table ki styling */
+        table {
+            width: 80%;
+            max-width: 750px;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Table heading */
+        th {
+            background-color: #2563eb;
+            color: white;
+            padding: 18px;
+            font-size: 17px;
+        }
+
+        /* Table ke cells */
+        td {
+            padding: 16px;
+            color: #334155;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        /* Alternate rows ka color */
+        tr:nth-child(even) {
+            background-color: #eff6ff;
+        }
+
+        /* Mouse le jaane par row ka effect */
+        tbody tr:hover {
+            background-color: #bfdbfe;
+            transition: 0.3s;
+        }
+
+        /* Last row ka border hatana */
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Mobile screen ke liye */
+        @media (max-width: 600px) {
+            table {
+                width: 100%;
+            }
+
+            th, td {
+                padding: 12px 8px;
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Page heading -->
+    <h1>Student Details</h1>
+
+    <!-- Student information table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll No</th>
+                <th>Subject</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Abhinandan</td>
+                <td>03</td>
+                <td>HTML</td>
+            </tr>
+
+            <tr>
+                <td>Arpit</td>
+                <td>12</td>
+                <td>HTML</td>
+            </tr>
+
+            <tr>
+                <td>Ajeet</td>
+                <td>18</td>
+                <td>CSS</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+```
