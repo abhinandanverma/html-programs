@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Stay | Hotel Booking</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            background: #142b36;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            color: #e6b86a;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            min-height: 430px;
+            background:
+            linear-gradient(#0008, #0008),
+            url("https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600")
+            center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 30px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .section {
+            padding: 55px 8%;
+            text-align: center;
+        }
+
+        .section h2 {
+            margin-bottom: 30px;
+            color: #142b36;
+        }
+
+        .rooms {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .room {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px #0002;
+            text-align: left;
+        }
+
+        .room img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .room-info {
+            padding: 18px;
+        }
+
+        .room-info h3 {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #bd873c;
+            font-weight: bold;
+            margin: 12px 0;
+        }
+
+        button {
+            background: #bd873c;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #946526;
+        }
+
+        .booking {
+            background: #e9eef0;
+        }
+
+        form {
+            max-width: 550px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin: 12px 0 6px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        #message {
+            margin-top: 18px;
+            color: #16763c;
+            font-weight: bold;
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #142b36;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media(max-width: 600px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                margin: 0 8px 0 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>ROYAL STAY</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#booking">Booking</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div>
+            <h1>Welcome to Royal Stay</h1>
+            <p>Experience Luxury, Comfort and Happiness.</p>
+            <br>
+            <a href="#rooms">
+                <button>Explore Rooms</button>
+            </a>
+        </div>
+    </section>
+
+    <section class="section" id="rooms">
+        <h2>Our Rooms</h2>
+
+        <div class="rooms">
+
+            <div class="room">
+                <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800" alt="Deluxe Room">
+
+                <div class="room-info">
+                    <h3>Deluxe Room</h3>
+                    <p>Comfortable room with modern facilities.</p>
+                    <p class="price">₹2,000 / Night</p>
+                    <button onclick="selectRoom('Deluxe Room')">Book Now</button>
+                </div>
+            </div>
+
+            <div class="room">
+                <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800" alt="Luxury Room">
+
+                <div class="room-info">
+                    <h3>Luxury Room</h3>
+                    <p>Enjoy a premium hotel experience.</p>
+                    <p class="price">₹3,500 / Night</p>
+                    <button onclick="selectRoom('Luxury Room')">Book Now</button>
+                </div>
+            </div>
+
+            <div class="room">
+                <img src="https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=800" alt="Suite Room">
+
+                <div class="room-info">
+                    <h3>Suite Room</h3>
+                    <p>Spacious room with elegant interiors.</p>
+                    <p class="price">₹5,000 / Night</p>
+                    <button onclick="selectRoom('Suite Room')">Book Now</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section booking" id="booking">
+        <h2>Book Your Room</h2>
+
+        <form id="bookingForm">
+
+            <label>Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label>Select Room</label>
+            <select id="room" required>
+                <option value="">Choose a room</option>
+                <option value="Deluxe Room">Deluxe Room</option>
+                <option value="Luxury Room">Luxury Room</option>
+                <option value="Suite Room">Suite Room</option>
+            </select>
+
+            <label>Check-in Date</label>
+            <input type="date" id="checkin" required>
+
+            <label>Check-out Date</label>
+            <input type="date" id="checkout" required>
+
+            <label>Number of Guests</label>
+            <input type="number" id="guests" min="1" max="6" value="1" required>
+
+            <button type="submit">Confirm Booking</button>
+
+            <div id="message"></div>
+
+        </form>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Royal Stay Hotel</p>
+        <p>Email: info@royalstay.example</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Location: Lucknow, Uttar Pradesh</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Royal Stay Hotel. All Rights Reserved.</p>
+        <p>Designed by Abhinandan Verma</p>
+    </footer>
+
+    <script>
+        const prices = {
+            "Deluxe Room": 2000,
+            "Luxury Room": 3500,
+            "Suite Room": 5000
+        };
+
+        function selectRoom(roomName) {
+            document.getElementById("room").value = roomName;
+
+            document.getElementById("booking")
+                .scrollIntoView({ behavior: "smooth" });
+        }
+
+        const today = new Date();
+        const localToday = new Date(
+            today.getTime() - today.getTimezoneOffset() * 60000
+        ).toISOString().split("T")[0];
+
+        document.getElementById("checkin").min = localToday;
+        document.getElementById("checkout").min = localToday;
+
+        document.getElementById("checkin").addEventListener("change", function() {
+            document.getElementById("checkout").min = this.value;
+        });
+
+        document.getElementById("bookingForm")
+            .addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const room = document.getElementById("room").value;
+            const checkin = document.getElementById("checkin").value;
+            const checkout = document.getElementById("checkout").value;
+            const guests = document.getElementById("guests").value;
+
+            const start = new Date(checkin + "T00:00:00");
+            const end = new Date(checkout + "T00:00:00");
+
+            const nights = Math.round(
+                (end - start) / (1000 * 60 * 60 * 24)
+            );
+
+            if (nights <= 0) {
+                alert("Check-out date must be after check-in date!");
+                return;
+            }
+
+            const total = prices[room] * nights;
+
+            document.getElementById("message").innerHTML = `
+                Booking Request Submitted!<br>
+                Name: ${name}<br>
+                Room: ${room}<br>
+                Guests: ${guests}<br>
+                Nights: ${nights}<br>
+                Total Amount: ₹${total.toLocaleString("en-IN")}<br>
+                <small>This is a demo booking, not a confirmed hotel reservation.</small>
+            `;
+
+        });
+    </script>
+
+</body>
+</html>
